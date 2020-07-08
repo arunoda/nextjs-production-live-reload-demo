@@ -1,8 +1,6 @@
 import Markdown from 'markdown-to-jsx'
 import { promises as fsPromises } from 'fs'
 import path from 'path'
-import LiveReloadBanner from '../components/LiveReloadHint'
-// import useLiveReload from '../lib/use-live-reload'
 
 export default function Index({content}) {    
     return (
@@ -10,7 +8,6 @@ export default function Index({content}) {
             <Markdown>
                 {content}
             </Markdown>
-            <LiveReloadBanner />
             <style jsx>{`
                 .container {
                     font-family: Arial;
