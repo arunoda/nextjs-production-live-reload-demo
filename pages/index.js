@@ -1,8 +1,10 @@
 import Markdown from 'markdown-to-jsx'
 import { promises as fsPromises } from 'fs'
 import path from 'path'
+import useLiveReload from '../lib/use-live-reload'
 
 export default function Index({content}) {    
+    useLiveReload()
     return (
         <div className="container">
             <Markdown>
