@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "next -p 3005",
+    "dev": "npm run build && npm run start",
     "build": "next build",
     "start": "next start -p 3005"
   },
